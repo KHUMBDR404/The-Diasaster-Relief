@@ -78,7 +78,7 @@ export default function Register() {
           {/* Register Button */}
           <button
             type="button"
-            className="flex w-full justify-center rounded-md bg-green-700 px-3 py-2 text-sm font-semibold text-white hover:bg-green-900"
+            className="flex w-full justify-center rounded-md bg-teal-800 px-3 py-2 mt-4 text-sm font-semibold text-white hover:bg-teal-900"
           >
             Create Account
           </button>
@@ -98,11 +98,11 @@ export default function Register() {
 
         </form>
 
-        <p className="mt-10 text-center text-sm text-gray-600">
+        <p className="mt-2 text-center text-sm text-gray-600">
           Already have an account?{" "}
           <Link
             to="/login"
-            className="font-semibold text-green-800 hover:text-green-900"
+            className="font-semibold text-teal-800 hover:text-teal-900"
           >
             Sign in
           </Link>
