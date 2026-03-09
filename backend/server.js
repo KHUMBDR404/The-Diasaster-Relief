@@ -1,13 +1,18 @@
 import express from "express";
+import dotenv from "dotenv";
 import prisma from "./DB/prisma.js";
+
+dotenv.config();
+
 const app = express();
+app.use(express.json());
 
-
-const PORT = 5000;
-app.get("/", (req,res) => {
-    res.send("server is running")
+app.get("/", (req, res) => {
+  res.send("Server is running");
 });
+
+const PORT = process.env.PORT || 5000;
+
 app.listen(PORT, () => {
-    console.log (`server is running at ${PORT}`);
-    
+  console.log(`Server running on port ${PORT}`);
 });

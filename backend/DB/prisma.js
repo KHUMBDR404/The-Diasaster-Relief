@@ -1,6 +1,5 @@
 import { PrismaClient } from "@prisma/client";
-import config from "../prisma.config.js";
 
-const prisma = new PrismaClient(config);
+const prisma = new PrismaClient();
 
 export default prisma;
