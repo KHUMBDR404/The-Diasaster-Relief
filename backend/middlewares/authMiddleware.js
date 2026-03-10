@@ -1,21 +1,16 @@
-import cors from "cors";
 import jwt from "jsonwebtoken";
 
-export const authMiddleware = (req, res, next) => {
-    try {
-        const token = req.headers.authorization?.split(" ")[1];// split function to get bearer token
-        if (!token) {
-            return 
-            res.status(401)
-            .json({ message: "unauthorized"});
-    
-            const decoded = jwt.verify(token, process.env.JWT_SECRET);
-            req.user = decoded; // must contain id for decoding
-        }
-            next();
-             
-    }catch(error) {
-        returnres.status(401)
-        .json({ message: "Invalid token"});
-    }
+export const authenticateToken = (req, res, next) => {
+  const authHeader = req.headers["authorization"];
+  const token = authHeader && authHeader.split(" ")[1];
+
+  if (!token) return res.status(401).json({ msg: "No token, authorization denied" });
+
+  try {
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+    req.user = decoded;
+    next();
+  } catch (err) {
+    res.status(403).json({ msg: "Token is not valid" });
+  }
 };

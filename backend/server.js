@@ -1,18 +1,16 @@
 import express from "express";
 import dotenv from "dotenv";
-import prisma from "./DB/prisma.js";
+import authRoutes from "./Routes/authRoutes.js";
 
 dotenv.config();
 
 const app = express();
 app.use(express.json());
 
-app.get("/", (req, res) => {
-  res.send("Server is running");
-});
+// Routes
+app.use("/api/auth", authRoutes);
+
+app.get("/", (req, res) => res.send("Server is running"));
 
 const PORT = process.env.PORT || 5000;
-
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

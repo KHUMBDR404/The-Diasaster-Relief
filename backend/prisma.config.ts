@@ -1,8 +1,8 @@
-import dotenv from "dotenv";
-dotenv.config();
+import "dotenv/config";
 
 export default {
+  schema: "./prisma/schema.prisma",
   datasource: {
-    url: process.env.DATABASE_URL, // Make sure this exists
-  },
+    url: process.env.DATABASE_URL
+  }
 };
