@@ -3,7 +3,7 @@ import jwt from "jsonwebtoken";
 
 export const authMiddleware = (req, res, next) => {
     try {
-        const token = req.headers.authorization?.split(" ")[1];
+        const token = req.headers.authorization?.split(" ")[1]; // .split to get the token from "Bearer <token>"
         if (!token) {
             return 
             res.status(401)
