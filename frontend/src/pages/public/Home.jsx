@@ -1,8 +1,16 @@
 import React from "react";
 import heroImg from "/src/assets/image.png";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Home() {
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    // Show text 3 seconds after component mounts
+    const timer = setTimeout(() => setVisible(true), 300);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div className="w-full min-h-screen">
       {/* HERO SECTION */}
@@ -15,13 +23,43 @@ export default function Home() {
           }}
         >
           {/* TEXT CONTENT */}
-          <div className="max-w-lg z-20">
-            <p className="text-5xl font-bold ">WELCOME</p>
-            <h1 className="text-5xl font-extrabold mt-2">TO THEDisaster</h1>
-            <h1 className="mt-2 text-5xl font-extrabold">RELIEF</h1>
-            <p className="mt-4 text-white/90">Together for Relief,</p>
-            <p className="text-white/90">Stronger After Every Disaster</p>
-          </div>
+           <div className="max-w-lg z-20">
+      <p
+        className={`text-5xl font-bold transition-opacity duration-1000 ${
+          visible ? "opacity-100" : "opacity-0"
+        }`}
+      >
+        WELCOME
+      </p>
+      <h1
+        className={`text-5xl font-extrabold mt-2 transition-opacity duration-1000 delay-200 ${
+          visible ? "opacity-100" : "opacity-0"
+        }`}
+      >
+        TO THEDisaster
+      </h1>
+      <h1
+        className={`mt-2 text-5xl font-extrabold transition-opacity duration-1000 delay-400 ${
+          visible ? "opacity-100" : "opacity-0"
+        }`}
+      >
+        RELIEF
+      </h1>
+      <p
+        className={`mt-4 text-white/90 transition-opacity duration-1000 delay-600 ${
+          visible ? "opacity-100" : "opacity-0"
+        }`}
+      >
+        Together for Relief,
+      </p>
+      <p
+        className={`text-white/90 transition-opacity duration-1000 delay-800 ${
+          visible ? "opacity-100" : "opacity-0"
+        }`}
+      >
+        Stronger After Every Disaster
+      </p>
+    </div>
         </div>
 
         {/* RIGHT DIAGONAL IMAGE AREA */}
@@ -48,22 +86,22 @@ export default function Home() {
       </div>
 
       {/* CARDS SECTION */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 pr-20 pl-20 pb-20 pt-0 mt-10 ">
-        <div className="bg-white shadow-lg rounded-xl border-t-4 border-teal-500 p-6">
-          <h3 className="text-xl font-bold text-teal-700 text-center">
-            MEDICAL KIT
-          </h3>
-          <p className="mt-3 text-gray-600 justify">
-            A medical kit is a crucial part of disaster relief because it
-            provides immediate first aid to injured or sick victims before
-            professional help arrives. It includes essential supplies like
-            bandages, antiseptics, gloves, pain relievers, and basic medicines.
-            During disasters, access to hospitals may be limited, so a
-            well-prepared medical kit helps prevent infections, control
-            bleeding, and stabilize patients. This ensures faster recovery and
-            reduces the risk of serious complications.
-          </p>
-        </div>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 pr-20 pl-20 pb-20 pt-0 mt-10">
+        <div className="group bg-white shadow-lg rounded-xl border-t-4 border-teal-500 p-6 hover:bg-teal-700  hover:scale-105 transition-colors transition duration-500 ">
+  <h3 className="text-xl font-bold text-teal-700 text-center group-hover:text-white transition-colors duration-300">
+    MEDICAL KIT
+  </h3>
+  <p className="mt-3 text-gray-600 group-hover:text-white transition-colors duration-300">
+    A medical kit is a crucial part of disaster relief because it
+    provides immediate first aid to injured or sick victims before
+    professional help arrives. It includes essential supplies like
+    bandages, antiseptics, gloves, pain relievers, and basic medicines.
+    During disasters, access to hospitals may be limited, so a
+    well-prepared medical kit helps prevent infections, control
+    bleeding, and stabilize patients. This ensures faster recovery and
+    reduces the risk of serious complications.
+  </p>
+</div>
 
         <div className="bg-white shadow-lg rounded-xl  border-t-4 border-teal-500 p-6">
           <h3 className="text-xl font-bold text-teal-700 text-center">

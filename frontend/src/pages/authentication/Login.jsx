@@ -33,7 +33,7 @@ export default function Login() {
       if (response.ok) {
         login(data.token, data.user);
         // Redirect based on role
-        navigate("/dashboard");
+        navigate("/");
       } else {
         setError(data.msg || "Login failed");
       }
