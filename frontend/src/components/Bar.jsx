@@ -37,7 +37,7 @@ export default function Bar() {
           to="/dashboard"
           className={({ isActive }) =>
             isActive
-              ? "font-bold text-gray-700 border-b-2 border-teal-700 pb-1"
+              ? "font-bold text-gray-700 border-b-3 border-teal-700 pb-1"
               : "text-gray-600 font-semibold hover:text-gray-800 transition"
           }
         >
@@ -48,7 +48,7 @@ export default function Bar() {
           to="/donationform"
           className={({ isActive }) =>
             isActive
-              ? "font-bold text-gray-700 border-b-2 border-teal-700 pb-1"
+              ? "font-bold text-gray-700 border-b-3 border-teal-700 pb-1"
               : "text-gray-600 font-semibold hover:text-gray-800 transition"
           }
         >
@@ -59,7 +59,7 @@ export default function Bar() {
           to="/services"
           className={({ isActive }) =>
             isActive
-              ? "font-bold text-gray-700 border-b-2 border-teal-700 pb-1"
+              ? "font-bold text-gray-700 border-b-3 border-teal-700 pb-1"
               : "text-gray-600 font-semibold hover:text-gray-800 transition"
           }
         >
@@ -70,7 +70,7 @@ export default function Bar() {
           to="/contact"
           className={({ isActive }) =>
             isActive
-              ? "font-bold text-gray-700 border-b-2 border-teal-700 pb-1"
+              ? "font-bold text-gray-700 border-b-3 border-teal-700 pb-1"
               : "text-gray-600 font-semibold hover:text-gray-800 transition"
           }
         >
@@ -81,7 +81,7 @@ export default function Bar() {
           to="/aboutus"
           className={({ isActive }) =>
             isActive
-              ? "font-bold text-gray-700 border-b-2 border-teal-700 pb-1"
+              ? "font-bold text-gray-700 border-b-3 border-teal-700 pb-1"
               : "text-gray-600 font-semibold hover:text-gray-800 transition"
           }
         >

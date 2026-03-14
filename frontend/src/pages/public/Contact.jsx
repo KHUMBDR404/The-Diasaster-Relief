@@ -1,4 +1,8 @@
 import React from "react";
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import contactBg from "/src/assets/rescue-team-navigating-flooded-residential-600nw-2511305493.webp";
 
 export default function Contact() {
@@ -17,41 +21,42 @@ export default function Contact() {
         <div className="flex-1 space-y-6 pt-0">
           <h2 className="text-3xl font-bold">Contact Us</h2>
           <p className="text-sm text-gray-200">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-            dignissimos eaque doloremque, nulla mollitia facilis temporibus
-            ullam voluptas nostrum consequatur?
+            We’re always excited to hear from our visitors, 
+            whether you have a question about our services, want to
+             share feedback, or simply want to connect. please don’t
+             hesitate to reach out to us using any of the methods below.
           </p>
 
           <div className="space-y-4">
             <div className="flex items-center gap-4">
-              <div className="bg-white text-black p-3 rounded-full">
-                <i className="fas fa-home"></i>
+              <div className="bg-white text-black p-1 rounded-full">
+                <FontAwesomeIcon icon={faHome} />
               </div>
               <div>
                 <p className="font-semibold text-teal-400">Address</p>
                 <p className="text-gray-200 text-sm">
-                  4671 Sugar Camp Road, Owatonna, Minnesota, 55060
+                  Online based Platform, No Physical Location
                 </p>
               </div>
             </div>
 
             <div className="flex items-center gap-4">
-              <div className="bg-white text-black p-3 rounded-full">
-                <i className="fas fa-phone"></i>
+              <div className="bg-white text-black p-1 rounded-full">
+                <FontAwesomeIcon icon={faPhone} />
               </div>
               <div>
                 <p className="font-semibold text-teal-400">Phone</p>
-                <p className="text-gray-200 text-sm">561-456-2321</p>
+                <p className="text-gray-200 text-sm">+977 9814562321</p>
               </div>
             </div>
 
             <div className="flex items-center gap-4">
-              <div className="bg-white text-black p-3 rounded-full">
-                <i className="fas fa-envelope"></i>
+              <div className="bg-white text-black p-1 rounded-full">
+                 <FontAwesomeIcon icon={faEnvelope} />
               </div>
               <div>
                 <p className="font-semibold text-teal-400">Email</p>
-                <p className="text-gray-200 text-sm">example@email.com</p>
+                <p className="text-gray-200 text-sm">TheDisasterRelief@email.com</p>
               </div>
             </div>
           </div>
@@ -60,7 +65,7 @@ export default function Contact() {
         {/* Right Section - Form */}
         <div className="flex-1 bg-white rounded-lg p-6 text-black mt-16 md:mt-4">
           <h3 className="text-xl font-bold text-center">Send Message</h3>
-          <p className="italic font-sm mb-4 text-center">
+          <p className="italic text-sm mb-4 text-center">
             Your Voice, Our Connection.
           </p>
           <form className="space-y-4">
