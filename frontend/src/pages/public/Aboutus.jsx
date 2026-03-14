@@ -9,13 +9,13 @@ const Aboutus = () => {
   return (
     <div className="flex flex-col">
       {/* About Us Section */}
-      <section className="w-full bg-white py-6 px-4 relative flex flex-col md:flex-row items-center overflow-hidden">
+      <section className="w-full bg-white py-6 px-4  relative flex flex-col md:flex-row items-center overflow-hidden">
         {/* Left text */}
-        <div className="md:w-1/2 mb-10 md:mb-0 z-10">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-teal-800 mb-4">
+        <div className="md:w-1/2 mb-10 md:mb-0 z-10 md:pl-10">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-teal-800 mb-4 ">
             ABOUT US
           </h2>
-          <p className="text-gray-600 mb-3">
+          <p className="text-gray-600 mb-3 ">
             THEDisasterRelief is a dedicated disaster relief platform committed
             to providing timely support and assistance to communities affected
             by natural and man-made disasters. Our mission is to connect donors,
@@ -59,7 +59,7 @@ const Aboutus = () => {
           <div className="bg-white shadow-lg rounded-xl p-6 hover:shadow-xl hover:scale-105 transition-transform duration-300">
            <h2 className="text-xl font-semibold text-black text-center mb-3">
               Our Mission
-              <span className="block w-16 border-b-4 border-green-700 mx-auto mt-2"></span>
+              <span className="block w-16 border-b-4 border-green-400 mx-auto mt-2"></span>
             </h2>
             <p className="text-gray-700">
               To provide fast, transparent, and reliable support to communities
@@ -84,7 +84,7 @@ const Aboutus = () => {
           <div className="bg-white shadow-lg rounded-xl p-6 hover:shadow-xl hover:scale-105 transition-transform duration-300">
            <h2 className="text-xl font-semibold text-black text-center mb-3">
               Our Goals
-              <span className="block w-16 border-b-4 border-cyan-700 mx-auto mt-2"></span>
+              <span className="block w-16 border-b-4 border-yellow-400 mx-auto mt-2"></span>
             </h2>
             <p className="text-gray-700">
               Maintain transparency in donations and relief distribution, and

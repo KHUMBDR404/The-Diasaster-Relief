@@ -9,7 +9,6 @@ export default function Sidebar() {
     { name: "Disasters", path: "/dashboard/disasters" },
     { name: "Victim", path: "/dashboard/victim" },
     { name: "Donor", path: "/dashboard/donor" },
-    { name: "Mails", path: "/dashboard/mails" },
     { name: "DeliveryTrack", path: "/dashboard/deliverytrack" },
   ];
 

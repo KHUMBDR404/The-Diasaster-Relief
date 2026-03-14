@@ -12,7 +12,6 @@ import Contact from "./pages/public/Contact";
 
 import Dashboard from "./pages/dashboard/Dashboard";
 import Disasters from "./pages/dashboard/Disasters";
-import Mails from "./pages/dashboard/Mails";
 import Victim from "./pages/dashboard/Victim";
 import Donor from "./pages/dashboard/Donor";
 import DonationForm from "./pages/public/DonationForm";
@@ -41,7 +40,6 @@ export default function App() {
         <Route path="/dashboard" element={<Layout />}>
           <Route index element={<Dashboard />} />
           <Route path="disasters" element={<Disasters />} />
-          <Route path="mails" element={<Mails />} />
           <Route path="victim" element={<Victim />} />
           <Route path="donor" element={<Donor />} />
           <Route path="deliverytrack" element={<DeliveryTrack />} />
