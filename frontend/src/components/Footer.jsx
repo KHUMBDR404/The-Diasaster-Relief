@@ -38,7 +38,7 @@ resources, and support, helping communities respond faster and recover effective
           <ul className="space-y-2 pl-10">
             <li>Home</li>
             <li>Dashboard</li>
-            <li>History</li>
+            <li>Services</li>
             <li>About Us</li>
             <li>Contact</li>
           </ul>
