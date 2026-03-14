@@ -1,5 +1,5 @@
 import React from "react";
-
+import Img from "/src/assets/volunteers-giving-donation-other-people_258153-515.avif";
 export default function DonationForm() {
   return (
     <div className="min-h-screen grid md:grid-cols-2 p-8 bg-gray-100 ">
@@ -7,7 +7,7 @@ export default function DonationForm() {
       {/* LEFT IMAGE SECTION */}
       <div className="hidden md:block">
         <img
-          src="https://images.unsplash.com/photo-1501785888041-af3ef285b470"
+          src={Img}
           alt="Waterfall"
           className="w-full h-full rounded-bl-3xl rounded-tl-3xl"
         />
