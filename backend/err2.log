@@ -1,0 +1,41 @@
+﻿node : file:///C:/gitr
+eprojectrepo/backend/c
+ontrollers/authControl
+lers.js:6
+At line:1 char:1
++ node server.js > 
+error.log 2>&1
++ ~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~
+    + CategoryInfo    
+          : NotSpeci  
+  fied: (file:///C:   
+ /gitr...ontroller    
+s.js:6:String) []    
+, RemoteException
+    + FullyQualifiedE 
+   rrorId : NativeCo  
+  mmandError
+ 
+<<<<<<< HEAD
+^^
+
+SyntaxError: 
+Unexpected token '<<'
+    at compileSourceTe
+xtModule (node:interna
+l/modules/esm/utils:34
+4:16)
+    at ModuleLoader.mo
+duleStrategy (node:int
+ernal/modules/esm/tran
+slators:105:18)
+    at #translate (nod
+e:internal/modules/esm
+/loader:534:12)
+    at ModuleLoader.lo
+adAndTranslate (node:i
+nternal/modules/esm/lo
+ader:581:27)
+
+Node.js v22.16.0
